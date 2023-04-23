@@ -1,0 +1,23 @@
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/narenj/styles/side-editor
+type: text/vnd.tiddlywiki
+
+.kk-side-editor-droppable-area {
+	margin-right:5px;
+	min-height:20px;
+	text-align:center;	
+	border:1px dotted <<colour "tab-divider">>;
+	color: <<colour "muted-foreground">>
+}
+.edit-with-70{
+	width:70%
+}
+.kk-side-editor .tc-edit-texteditor,
+.kk-side-editor  .tc-edit-texteditor-body {
+	max-width:100%;
+	width:99%
+}
+
+.kk-side-editor-select{
+	min-width:40%;
+}

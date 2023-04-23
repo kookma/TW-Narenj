@@ -1,0 +1,24 @@
+/*
+.tc-editor-toolbar button.tc-text-editor-toolbar-item-adjunct {
+margin-left: 1px;
+width: 1em;
+border-radius: 8px;
+}
+*/
+.kk-side-editor .tc-editor-toolbar button svg{
+	width:1em;
+}
+
+.kk-side-editor .tc-editor-toolbar button.tc-text-editor-toolbar-item-adjunct svg{
+	width:0.65em;
+}
+
+/*
+div.tc-tiddler-body.tc-reveal a.tc-tiddlylink  {
+color: <<colour tiddler-link-foreground>>;
+}
+
+div.tc-tiddler-body.tc-reveal {
+color: <<colour foreground>>;
+}
+*/

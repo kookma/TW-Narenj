@@ -1,0 +1,6 @@
+caption: Seditor
+tags: $:/tags/SideBar
+title: $:/plugins/kookma/narenj/ui/side-editor
+type: text/vnd.tiddlywiki
+
+{{$:/plugins/kookma/narenj/templates/EditTemplate}}

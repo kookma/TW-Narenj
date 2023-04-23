@@ -1,0 +1,29 @@
+caption: {{$:/core/images/close-button}} {{$:/language/Buttons/Close/Caption}}
+code-body: yes
+description: {{$:/language/Buttons/Close/Hint}}
+tags: pinned
+title: $:/plugins/kookma/narenj/Buttons/close
+type: text/vnd.tiddlywiki
+
+\import [[$:/plugins/kookma/narenj/macros/definition]]
+\whitespace trim
+<$button tooltip={{$:/language/Buttons/Close/Hint}} aria-label={{$:/language/Buttons/Close/Caption}} class=<<tv-config-toolbar-class>>>
+    <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+        {{$:/core/images/close-button}}
+    </$list>
+    <$list filter="[<tv-config-toolbar-text>match[yes]]">
+        <span class="tc-btn-text">
+            <$text text={{$:/language/Buttons/Close/Caption}}/>
+        </span>
+    </$list>
+		
+    <$action-deletetiddler $tiddler=<<pinStateTiddler>> />
+		<$action-setfield $tiddler="$:/state/tab/sidebar--595412856" text="$:/core/ui/SideBar/Open" />
+    
+		<!--
+		<$action-setfield $tiddler="$:/drift/side-by-side" tags="" />
+    <$action-setfield $tiddler="$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth" text="350px" />
+    <$action-setfield $tiddler="$:/state/sidebar" text="no" />
+    <$action-setfield $tiddler="$:/state/tab/sidebar--595412856" text="$:/drift/side-by-side" />
+    -->
+</$button>

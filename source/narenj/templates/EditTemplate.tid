@@ -1,0 +1,34 @@
+code-body: yes
+tags: 
+title: $:/plugins/kookma/narenj/templates/EditTemplate
+type: text/vnd.tiddlywiki
+
+\define seTempTiddler() $:/temp/side-editor
+\define dropAction() <$action-setfield $tiddler=<<seTempTiddler>> $field=text $value=<<actionTiddler>> />
+
+\define selectFromStory()
+<$select tiddler=<<seTempTiddler>> field=text class="kk-side-editor-select">
+<$list filter="[list[$:/StoryList]]">
+<option value=<<currentTiddler>>><$view field='title'/></option>
+</$list>
+</$select>
+\end
+
+
+<$droppable actions=<<dropAction>> class="kk-side-editor-droppable-area">
+
+Drop a tiddler here to edit it in side editor
+
+</$droppable>
+
+<$button setTitle=<<seTempTiddler>> setTo="">Clear box</$button>
+&nbsp;
+<$link to={{{ [<seTempTiddler>get[text]] }}}/>
+
+Select from Story: <$list filter="[list[$:/StoryList]limit[1]]" variable=null><<selectFromStory>></$list>
+
+<div class="kk-side-editor">
+<$tiddler tiddler={{{ [<seTempTiddler>get[text]] }}} >
+{{|| $:/core/ui/EditTemplate/body/editor}}
+</$tiddler>
+</div>

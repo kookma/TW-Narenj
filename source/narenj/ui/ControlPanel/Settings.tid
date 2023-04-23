@@ -1,0 +1,16 @@
+caption: Narenj
+created: 20230423092135540
+modified: 20230423092334676
+tags: $:/tags/ControlPanel/SettingsTab $:/tags/MoreSideBar
+title: $:/plugins/kookma/narenj/ui/ControlPanel/Settings
+type: text/vnd.tiddlywiki
+
+These settings let you customise the behaviour of Narenj plugin.
+
+---
+
+;Show Narenj setting in more sidebar
+:<$checkbox tiddler="$:/plugins/kookma/narenj/ui/ControlPanel/Settings" tag="$:/tags/MoreSideBar"> Show setting in more sidebar</$checkbox>
+
+;Options
+:<$checkbox tiddler="$:/plugins/kookma/narenj/ui/side-editor" tag="$:/tags/SideBar"> Show side editor</$checkbox>

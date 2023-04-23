@@ -1,0 +1,16 @@
+code-body: yes
+list: $:/plugins/kookma/narenj/templates/ViewTemplate/title $:/core/ui/ViewTemplate/subtitle $:/core/ui/ViewTemplate/tags $:/core/ui/ViewTemplate/classic $:/core/ui/ViewTemplate/body $:/core/ui/ViewTemplate/import $:/core/ui/ViewTemplate/plugin $:/ak/plugins/TWCrossLinks/ui/footer.kwd
+tags: pinned
+title: $:/plugins/kookma/narenj/templates/ViewTemplate
+type: text/vnd.tiddlywiki
+
+\define folded-state()
+$:/state/folded/$(currentTiddler)$
+\end
+
+<$vars storyTiddler=<<currentTiddler>> tiddlerInfoState=<<qualify "$:/state/popup/tiddler-info">>><div data-tiddler-title=<<currentTiddler>> data-tags={{!!tags}} class={{{ tc-tiddler-frame tc-tiddler-view-frame [<currentTiddler>is[tiddler]then[tc-tiddler-exists]] [<currentTiddler>is[missing]!is[shadow]then[tc-tiddler-missing]] [<currentTiddler>is[shadow]then[tc-tiddler-exists tc-tiddler-shadow]] [<currentTiddler>is[shadow]is[tiddler]then[tc-tiddler-overridden-shadow]] [<currentTiddler>is[system]then[tc-tiddler-system]] [{!!class}] [<currentTiddler>tags[]encodeuricomponent[]addprefix[tc-tagged-]] +[join[ ]] }}}>
+    <$list filter="[list[$:/plugins/kookma/narenj/templates/ViewTemplate]]" variable="listItem"><$transclude tiddler=<<listItem>>/></$list>
+</div>
+</$vars>
+
+

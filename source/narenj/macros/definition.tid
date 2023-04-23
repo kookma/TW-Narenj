@@ -1,0 +1,6 @@
+code-body: yes
+tags: 
+title: $:/plugins/kookma/narenj/macros/definition
+type: text/vnd.tiddlywiki
+
+\define pinStateTiddler() $:/keepstate/nareng/pin-to-sidebar
