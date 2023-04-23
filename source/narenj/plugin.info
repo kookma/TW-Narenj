@@ -5,7 +5,7 @@
     "author": "Mohammad rahmani",
     "version": "0.2.0",
     "core-version": ">= 5.2.7",
-    "source": "",
+    "source": "https://github.com/kookma/TW-Narenj",
     "list": "readme license history",
     "plugin-type": "plugin",
     "parent-plugin": "",

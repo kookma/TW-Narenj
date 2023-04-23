@@ -2,14 +2,16 @@ caption: {{$:/plugins/kookma/narenj/images/pin-to-side}} {{$:/language/Buttons/N
 code-body: yes
 description: {{$:/language/Buttons/Narenj/Pin/Hint}}
 list-before: $:/core/ui/Buttons/close
-tags: $:/tags/ViewToolbar pinned
+tags: $:/tags/ViewToolbar
 title: $:/plugins/kookma/narenj/Buttons/pin
 type: text/vnd.tiddlywiki
 
 \import [[$:/plugins/kookma/narenj/macros/definition]]
 \whitespace trim
 \define side-by-side-body()
+<div class="kk-pinned-tab">
 {{ $(currentTiddler)$ ||$:/plugins/kookma/narenj/templates/ViewTemplate }}
+</div>
 \end
 
 \define btnAction()

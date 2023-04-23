@@ -1,0 +1,8 @@
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/narenj/styles/pinned
+type: text/vnd.tiddlywiki
+
+/* prevent using the muted sidebar color */
+.tc-sidebar-header .kk-pinned-tab  {
+	color: <<colour "foreground">>;
+}

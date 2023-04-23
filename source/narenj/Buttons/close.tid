@@ -1,7 +1,6 @@
 caption: {{$:/core/images/close-button}} {{$:/language/Buttons/Close/Caption}}
 code-body: yes
 description: {{$:/language/Buttons/Close/Hint}}
-tags: pinned
 title: $:/plugins/kookma/narenj/Buttons/close
 type: text/vnd.tiddlywiki
 
