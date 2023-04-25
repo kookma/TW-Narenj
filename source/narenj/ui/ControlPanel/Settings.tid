@@ -11,4 +11,7 @@ These settings let you customise the behaviour of Narenj plugin.
 :<$checkbox tiddler="$:/plugins/kookma/narenj/ui/ControlPanel/Settings" tag="$:/tags/MoreSideBar"> Show setting in more sidebar</$checkbox>
 
 ;Options
-:<$checkbox tiddler="$:/plugins/kookma/narenj/ui/side-editor" tag="$:/tags/SideBar"> Show side editor</$checkbox>
+:<$checkbox tiddler="$:/plugins/kookma/narenj/ui/side-editor" tag="$:/tags/SideBar"> Show side editor as sidebar tab</$checkbox>
+
+;Shortcuts
+: <label style="margin-right:5px;">Reopen pinned tiddler in the story river</label><$edit-text tiddler="$:/config/narenj/modifierkey/reopen-in-storyriver" tag=input default="" placeholder="a moifier key like ctrl" class="kk-fav-input"/> + <kbd>click</kbd>

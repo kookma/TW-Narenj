@@ -4,3 +4,4 @@ title: $:/plugins/kookma/narenj/macros/definition
 type: text/vnd.tiddlywiki
 
 \define pinStateTiddler() $:/keepstate/nareng/pin-to-sidebar
+\define reopenInStoryModifierKey() $:/config/narenj/modifierkey/reopen-in-storyriver

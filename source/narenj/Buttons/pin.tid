@@ -14,7 +14,7 @@ type: text/vnd.tiddlywiki
 </div>
 \end
 
-\define btnAction()
+\define btn-pin-actions()
     <$action-setmultiplefields $tiddler=<<pinStateTiddler>> $fields="tags caption" $values="$:/tags/SideBar Pinned"/>
     <$action-setfield $tiddler=<<pinStateTiddler>> text=<<side-by-side-body>> />
 		<!--
@@ -27,7 +27,7 @@ type: text/vnd.tiddlywiki
 \end
 
 
-<$button message="tm-close-tiddler"  tooltip={{$:/language/Buttons/Narenj/Pin/Hint}} aria-label={{$:/language/Buttons/Narenj/Pin/Caption}} class=<<tv-config-toolbar-class>> actions=<<btnAction>> >
+<$button message="tm-close-tiddler"  tooltip={{$:/language/Buttons/Narenj/Pin/Hint}} aria-label={{$:/language/Buttons/Narenj/Pin/Caption}} class=<<tv-config-toolbar-class>> actions=<<btn-pin-actions>> >
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
           {{$:/plugins/kookma/narenj/images/pin-to-side}}
 </$list>
