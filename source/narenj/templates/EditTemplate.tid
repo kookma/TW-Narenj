@@ -25,9 +25,9 @@ Drop a tiddler here to edit it in side editor
 &nbsp;
 <$link to={{{ [<seTempTiddler>get[text]] }}}/>
 
-Select from Story: <$list filter="[list[$:/StoryList]limit[1]]" variable=null><<selectFromStory>></$list>
+Select from Story: <%if [list[$:/StoryList]limit[1]] %><<selectFromStory>><%endif%>
 
-<div class="kk-side-editor">
+<div class=`kk-side-editor ${[<seTempTiddler>get[text]!is[blank]then[]else[disabled]]}$`>
 <$tiddler tiddler={{{ [<seTempTiddler>get[text]] }}} >
 {{|| $:/core/ui/EditTemplate/body/editor}}
 </$tiddler>

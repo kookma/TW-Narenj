@@ -13,6 +13,10 @@ border-radius: 8px;
 	width:0.65em;
 }
 
+.kk-side-editor.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
 /*
 div.tc-tiddler-body.tc-reveal a.tc-tiddlylink  {
 color: <<colour tiddler-link-foreground>>;
