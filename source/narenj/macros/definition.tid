@@ -3,5 +3,5 @@ tags:
 title: $:/plugins/kookma/narenj/macros/definition
 type: text/vnd.tiddlywiki
 
-\define pinStateTiddler() $:/keepstate/nareng/pin-to-sidebar
+\define pinStateTiddler() $:/keepstate/narenj/pin-to-sidebar
 \define reopenInStoryModifierKey() $:/config/narenj/modifierkey/reopen-in-storyriver
